@@ -1,0 +1,27 @@
+{
+  "name": "nicevue",
+  "version": "1.0.0",
+  "description": "vue组件库，vue、vite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgm0515/nicevue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgm0515/nicevue/issues"
+  },
+  "homepage": "https://github.com/kgm0515/nicevue#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4",
+    "vite": "^3.0.9"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  }
+}
