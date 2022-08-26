@@ -42,13 +42,3 @@ packages:
   "trailingComma": "none"
 }
 ```
-
-## ui 组件库
-
-初始化 ui 组件库`npm init -y `
-
-修改 pacakege.json
-
-```json
-{ "name": "@nicevue/ui" }
-```
