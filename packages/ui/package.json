@@ -9,12 +9,12 @@
     "style",
     "package.json"
   ],
-  "main": "./dist/nice-vue.umd.cjs",
-  "module": "./dist/nice-vue.js",
+  "main": "./dist/nicevue.umd.cjs",
+  "module": "./dist/nicevue.js",
   "exports": {
     ".": {
-      "import": "./dist/nice-vue.js",
-      "require": "./dist/nice-vue.umd.cjs"
+      "import": "./dist/nicevue.js",
+      "require": "./dist/nicevue.umd.cjs"
     }
   },
   "types": "types/main.d.ts",

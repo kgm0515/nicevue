@@ -6,6 +6,6 @@
  * @LastEditors: 匡光淼
  * @LastEditTime: 2022-08-26 15:37:47
  */
-const NiceVue = require('../packages/ui/dist/nice-vue.umd.cjs')
+const NiceVue = require('../packages/ui/dist/nicevue.umd.cjs')
 
 console.log(NiceVue)
