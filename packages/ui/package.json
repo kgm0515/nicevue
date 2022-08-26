@@ -9,8 +9,14 @@
     "style",
     "package.json"
   ],
-  "main": "./dist/nicevue.umd.cjs",
-  "module": "./dist/nicevue.js",
+  "main": "./dist/nice-vue.umd.cjs",
+  "module": "./dist/nice-vue.js",
+  "exports": {
+    ".": {
+      "import": "./dist/nice-vue.js",
+      "require": "./dist/nice-vue.umd.cjs"
+    }
+  },
   "types": "types/main.d.ts",
   "scripts": {
     "dev": "vite",
