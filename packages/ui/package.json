@@ -13,7 +13,8 @@
     ".": {
       "import": "./dist/es/index.js",
       "require": "./dist/index.umd.js"
-    }
+    },
+    "./dist/*": "./dist/*"
   },
   "types": "types/index.d.ts",
   "scripts": {

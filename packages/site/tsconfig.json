@@ -14,7 +14,7 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nicevue/ui/dist/style/index.css": ["node_modules/@nicevue/ui/dist/style/index.css"]
+      "@nicevue/ui/dist/*": ["@nicevue/ui/dist/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
