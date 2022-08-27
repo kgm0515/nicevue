@@ -4,28 +4,21 @@
  * @Autor: 匡光淼
  * @Date: 2022-08-26 09:46:46
  * @LastEditors: 匡光淼
- * @LastEditTime: 2022-08-27 10:38:53
+ * @LastEditTime: 2022-08-27 11:24:11
  */
-import { defineComponent, ref } from 'vue'
-// import { Button } from '@nicevue/ui' // 按需引入-引入按钮组件
-// import '@nicevue/ui/dist/style/theme/button.css' // 按需引入-引入按钮样式
-
-export const props = {}
+import { defineComponent } from 'vue'
+import TestButton from './TestButton'
+import HomeZh from '../docs/home.zh.md'
 
 export default defineComponent({
-  props,
-  // components: { NiceButton: Button },
   setup() {
-    const count = ref(0)
-    const handleCount = () => count.value++
     return () => {
       return (
-        <div class="wrap">
-          <nice-button type="primary" onClick={handleCount}>
-            add
-          </nice-button>
-          {/* <Button type="success" onClick={handleCount}>add</Button> */}
-          <p>count: {count.value}</p>
+        <div class="test-button">
+          <p>-----------测试按钮组件--------</p>
+          <TestButton />
+          <p>-----------测试markdown--------</p>
+          <HomeZh />
         </div>
       )
     }
