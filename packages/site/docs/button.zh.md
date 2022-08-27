@@ -1,3 +1,4 @@
+import Button from '../../ui/src/button'
 import {Button} from '@nicevue/ui'
 
 # 这是 NiceVue 组件首页
