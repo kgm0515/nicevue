@@ -2,31 +2,40 @@
   "name": "@nicevue/ui",
   "private": false,
   "version": "0.0.0",
-  "type": "module",
   "files": [
     "dist",
     "types",
-    "style",
     "package.json"
   ],
-  "main": "./dist/nicevue.umd.cjs",
-  "module": "./dist/nicevue.js",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/es/index.js",
   "exports": {
     ".": {
-      "import": "./dist/nicevue.js",
-      "require": "./dist/nicevue.umd.cjs"
+      "import": "./dist/es/index.js",
+      "require": "./dist/index.umd.js"
     }
   },
-  "types": "types/main.d.ts",
+  "types": "types/index.d.ts",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "build": "npm run build:ui && npm run build:style",
+    "build:ui": "vue-tsc --noEmit && vite build",
+    "build:style": "gulp buildTask"
   },
   "devDependencies": {
+    "@types/gulp": "^4.0.9",
+    "@types/gulp-autoprefixer": "^0.0.33",
+    "@types/gulp-clean-css": "^4.3.0",
+    "@types/gulp-less": "^0.0.32",
+    "@types/less": "^3.0.3",
     "@types/node": "^18.7.13",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-less": "^5.0.0",
+    "less": "^4.1.3",
     "typescript": "^4.6.4",
     "vite": "^3.0.7",
     "vite-plugin-dts": "^1.4.1",

@@ -1,0 +1,149 @@
+:root {
+  --button-radius-small: 2px;
+  --button-radius-middle: 4px;
+  --button-radius-large: 6px;
+  --button-border-color-default: rgba(0, 0, 0, 0.1);
+}
+
+.nice-button {
+  outline: none;
+  border: none;
+  transition: all 0.1s ease;
+  cursor: pointer;
+  color: #fff;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .k-icon {
+      color: inherit !important;
+      margin-right: 5px;
+    }
+  }
+  &--default {
+    color: var(--c-text);
+    background-color: #fff;
+    border: 1px solid var(--button-border-color-default);
+    &:hover {
+      color: var(--c-primary);
+      background: #f3f7ff;
+      border-color: #adc9ff;
+    }
+    &:active {
+      border-color: var(--c-primary);
+    }
+  }
+  &--primary {
+    background-color: var(--c-primary);
+    &:hover {
+      background: #5b8fff;
+    }
+    &:active {
+      background: #1b47a8;
+    }
+  }
+  &--success {
+    background-color: var(--c-success);
+    &:hover {
+      background: #43c5a2;
+    }
+    &:active {
+      background: #21705b;
+    }
+  }
+  &--info {
+    background-color: var(--c-info);
+    &:hover {
+      background: #4fc3ed;
+    }
+    &:active {
+      background: #3687a4;
+    }
+  }
+  &--warning {
+    background-color: var(--c-warning);
+    &:hover {
+      background: #faba52;
+    }
+    &:active {
+      background: #b38235;
+    }
+  }
+  &--danger {
+    background-color: var(--c-danger);
+    &:hover {
+      background: #f97e75;
+    }
+    &:active {
+      background: #af5751;
+    }
+  }
+
+  // 大小
+  &--small {
+    font-size: var(--fs-small);
+    line-height: 24px;
+    height: 24px;
+    padding: 0 12px;
+    border-radius: var(--button-radius-small);
+  }
+  &--middle {
+    font-size: var(--fs-middle);
+    line-height: 32px;
+    height: 32px;
+    padding: 0 14px;
+    border-radius: var(--button-radius-middle);
+  }
+  &--large {
+    font-size: var(--fs-large);
+    line-height: 40px;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: var(--button-radius-large);
+  }
+  // disabled------------------------------------------------------------
+  &--disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.7;
+  }
+  // text文字按钮----------------------------------------------------------
+  &--text {
+    border: none;
+    background-color: #fff;
+    &:hover {
+      background: #f9f9f9;
+    }
+    &:active {
+      background: #eee;
+    }
+  }
+  &--text&--bg {
+    background: #f9f9f9;
+    &:hover {
+      background: #f4f4f4;
+    }
+    &:active {
+      background: #eee;
+    }
+  }
+  &--text&--default {
+    color: var(--c-text);
+  }
+  &--text&--primary {
+    color: var(--c-primary);
+  }
+  &--text&--success {
+    color: var(--c-success);
+  }
+  &--text&--info {
+    color: var(--c-info);
+  }
+  &--text&--warning {
+    color: var(--c-warning);
+  }
+  &--text&--danger {
+    color: var(--c-danger);
+  }
+}

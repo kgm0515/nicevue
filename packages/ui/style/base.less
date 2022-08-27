@@ -1,0 +1,65 @@
+@import './var';
+
+.nice {
+  &--box {
+    box-sizing: border-box;
+    * {
+      box-sizing: border-box;
+    }
+  }
+  &--relative {
+    position: relative;
+  }
+  &--absolute {
+    position: absolute;
+  }
+  &--hidden {
+    overflow: hidden;
+  }
+  &--lock {
+    overflow: hidden;
+  }
+  &--ellipsis {
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  &--block {
+    display: block;
+  }
+  &--inline-block {
+    display: inline-block;
+  }
+  &--flex {
+    display: flex;
+  }
+  &--inline-flex {
+    display: inline-flex;
+  }
+}
+:root {
+  // 定义文字大小
+  --fs-small: @fs-small;
+  --fs-middle: @fs-middle;
+  --fs-large: @fs-large;
+  // 定义图标大小
+  --is-small: @is-small;
+  --is-middle: @is-middle;
+  --is-large: @is-large;
+  // 定义颜色
+  --c-body: @c-body;
+  --c-text: @c-text;
+  --c-primary: @c-primary;
+  --c-info: @c-info;
+  --c-success: @c-success;
+  --c-warning: @c-warning;
+  --c-danger: @c-danger;
+  --c-disabled: @c-disabled;
+  --c-text-disabled: @c-text-disabled;
+  // 定义动画函数
+  --cubic-bezier: @cubic-bezier;
+  // 定义阴影
+  --shadow-key-umbra-opacity: @shadow-key-umbra-opacity;
+  --shadow-key-penumbra-opacity: @shadow-key-penumbra-opacity;
+  --shadow-key-ambient-opacity: @shadow-key-ambient-opacity;
+}
