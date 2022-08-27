@@ -4,10 +4,11 @@
  * @Autor: 匡光淼
  * @Date: 2022-08-26 09:46:46
  * @LastEditors: 匡光淼
- * @LastEditTime: 2022-08-26 17:09:35
+ * @LastEditTime: 2022-08-27 10:38:53
  */
 import { defineComponent, ref } from 'vue'
-// import { Button } from '@nicevue/ui'
+// import { Button } from '@nicevue/ui' // 按需引入-引入按钮组件
+// import '@nicevue/ui/dist/style/theme/button.css' // 按需引入-引入按钮样式
 
 export const props = {}
 
@@ -20,8 +21,10 @@ export default defineComponent({
     return () => {
       return (
         <div class="wrap">
-          <nice-button onClick={handleCount}>add</nice-button>
-          {/* <Button onClick={handleCount}>add</Button> */}
+          <nice-button type="primary" onClick={handleCount}>
+            add
+          </nice-button>
+          {/* <Button type="success" onClick={handleCount}>add</Button> */}
           <p>count: {count.value}</p>
         </div>
       )
