@@ -1,0 +1,17 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  .menu-item {
+    list-style: none;
+    margin-right: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    &.active {
+      color: var(--c-primary);
+    }
+  }
+}

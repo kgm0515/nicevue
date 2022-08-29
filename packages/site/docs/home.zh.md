@@ -69,3 +69,9 @@ export default defineComponent({
   }
 })
 ```
+
+页面效果
+
+<p>
+<Button type="primary">primary</Button>
+</p>
