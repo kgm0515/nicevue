@@ -1,0 +1,28 @@
+{
+  "name": "@nicevue/cli",
+  "version": "1.0.0",
+  "description": "www",
+  "repository": "ssas.www.com",
+  "bin": {
+    "nicevue": "./lib/index.js"
+  },
+  "files": [
+    "lib",
+    "package.json"
+  ],
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "rimraf ./lib/index.js && tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.1",
+    "commander": "^9.2.0",
+    "fs-extra": "^10.1.0",
+    "ora": "5.4.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13"
+  }
+}
