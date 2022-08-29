@@ -4,7 +4,10 @@
   "description": "vue组件库，vue、vite",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:mdx && npm run build:ui && npm run build:site",
+    "build:mdx": "cd ./packages/mdx && pnpm i  && pnpm build",
+    "build:ui": "cd ./packages/ui && pnpm i  && pnpm build",
+    "build:site": "cd ./packages/site && pnpm i  && pnpm build"
   },
   "repository": {
     "type": "git",
