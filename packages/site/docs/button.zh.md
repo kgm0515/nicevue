@@ -1,16 +1,17 @@
-import Button from '../../ui/src/button'
 import {Button} from '@nicevue/ui'
 
-# 这是 NiceVue 组件首页
+# Button Component
 
-hello!
+这是 button 组件
 
-<Button type="primary">sssssssss</Button>
+<Button type="primary">button</Button>
 
 在项目中使用
 
 ```tsx
 import Button from '@nicevue/ui'
 
-return () => <Button type="primary">sssssssss</Button>
+return () => <Button type="primary">button</Button>
 ```
+
+<p></p>

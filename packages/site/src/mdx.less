@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+}
+code {
+  color: #3a7afe;
+}
+// mdx通用样式
+.mdx-wrapper {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  .mdx-h1 {
+    margin: 30px 0 24px;
+    color: #333;
+    font-weight: 700;
+    font-size: 30px;
+    border-bottom: 1px dashed #eee;
+  }
+  .mdx-h2 {
+    margin: 35px 0 20px;
+    color: #444;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .mdx-h3 {
+    clear: both;
+    font-size: 20px;
+    margin: 30px 0 15px;
+    color: #444;
+    font-weight: 500;
+  }
+  .mdx-h4,
+  .mdx-h5,
+  .mdx-h6 {
+    clear: both;
+    font-size: 16px;
+    margin: 18px 0;
+    color: #555;
+    font-weight: 500;
+  }
+  .mdx-p {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    margin: 16px 0;
+    line-height: 25px;
+  }
+  .mdx-code {
+    margin: 0 1px;
+    padding: 0.2em 0.4em;
+    font-size: 0.9em;
+    background: #f2f4f5;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+  }
+  .mdx-pre {
+    margin: 0;
+    padding: 16px;
+    border-radius: 4px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #f1f2f3;
+    margin-top: 10px;
+    .language-tsx {
+      line-height: 25px;
+      color: #555;
+      font-size: 14px;
+    }
+  }
+  .mdx-ul {
+    margin: 10px 20px;
+    padding-left: 4px;
+    list-style-type: circle;
+    .mdx-li {
+      &::marker {
+        unicode-bidi: isolate;
+        font-variant-numeric: tabular-nums;
+        text-transform: none;
+        text-indent: 0px !important;
+        text-align: start !important;
+        text-align-last: start !important;
+      }
+      .mdx-p {
+        margin: 8px 0;
+      }
+    }
+  }
+  .mdx-a {
+    color: #1890ff;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    -webkit-text-decoration-skip: objects;
+  }
+}
+
+.language-code {
+  .hljs-built_in,
+  .hljs-keyword,
+  .hljs-name,
+  .hljs-selector-tag,
+  .hljs-tag {
+    color: #3a7afe;
+  }
+  .hljs-addition,
+  .hljs-attribute,
+  .hljs-literal,
+  .hljs-section,
+  .hljs-string,
+  .hljs-template-tag,
+  .hljs-template-variable,
+  .hljs-title,
+  .hljs-type {
+    color: #f00;
+  }
+}
+
+.test-button {
+  max-width: 900px;
+  margin: 0 auto;
+}

@@ -4,10 +4,11 @@
  * @Autor: 匡光淼
  * @Date: 2022-08-26 09:46:46
  * @LastEditors: 匡光淼
- * @LastEditTime: 2022-08-27 10:48:19
+ * @LastEditTime: 2022-08-29 09:20:59
  */
 import { createApp } from 'vue'
 import App from './App'
+import './mdx.less'
 /** 生产模式 */
 // import NiceVue from '@nicevue/ui' // 引入全局组件
 // import '@nicevue/ui/dist/style/index.css' // 引入全局样式
