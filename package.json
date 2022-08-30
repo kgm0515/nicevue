@@ -4,10 +4,15 @@
   "description": "vue组件库，vue、vite",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:mdx && npm run build:ui && npm run build:site",
+    "build": "npm run build:mdx && npm run build:ui && npm run build:site && npm run build:cli",
     "build:mdx": "cd ./packages/mdx && pnpm i  && pnpm build",
     "build:ui": "cd ./packages/ui && pnpm i  && pnpm build",
-    "build:site": "cd ./packages/site && pnpm i  && pnpm build"
+    "build:site": "cd ./packages/site && pnpm i  && pnpm build",
+    "build:cli": "cd ./packages/cli && pnpm i  && pnpm build",
+    "dev:mdx": "cd ./packages/mdx && pnpm i  && pnpm dev",
+    "dev:site": "cd ./packages/site && pnpm i  && pnpm dev",
+    "dev:cli": "cd ./packages/cli && pnpm i  && pnpm dev",
+    "preview": "cd ./packages/site && pnpm preview"
   },
   "repository": {
     "type": "git",
