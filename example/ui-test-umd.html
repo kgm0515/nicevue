@@ -4,7 +4,7 @@
  * @Autor: 匡光淼
  * @Date: 2022-08-26 15:16:13
  * @LastEditors: 匡光淼
- * @LastEditTime: 2022-08-27 10:05:00
+ * @LastEditTime: 2022-08-30 17:51:21
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -13,13 +13,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../packages/ui/dist/style/index.css" />
+    <!-- <link rel="stylesheet" href="./node_modules/@nicevue/ui/dist/style/index.css" />
+    <script src="./node_modules/@nicevue/ui/dist/index.umd.js"></script> -->
     <script src="https://unpkg.com/vue@3.0.5/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="../packages/ui/dist/style/index.css" />
     <script src="../packages/ui/dist/index.umd.js"></script>
   </head>
   <body>
     <div id="app">
-      <nice-button size="small" @click="handleAdd">{{count}}</nice-button>
+      <nice-button type="success" size="small" @click="handleAdd">{{count}}</nice-button>
       <nice-scroll text="this is scroll comp"></nice-scroll>
     </div>
     <script defer>
