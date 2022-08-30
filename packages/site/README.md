@@ -1,16 +1,68 @@
-# Vue 3 + TypeScript + Vite
+# vue 组件库 @nicevue/ui
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+这是一个基于 vue 的 ui 组件库
 
-## Recommended IDE Setup
+欢迎使用 @nicevue/ui 组件库! `@nicevue/ui` 是基于 Vue 开发的组件库
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+## 特性
 
-## Type Support For `.vue` Imports in TS
+- 开箱即用的高质量 Vue 组件。
+- 使用 TypeScript 开发，提供完整的类型定义文件。
+- 制止组件和样式按需加载
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+## 安装
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+使用 npm 或 yarn 安装
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+我们推荐使用 npm 或 yarn 的方式进行开发，不仅可在开发环境轻松调试，也可放心地在生产环境打包部署使用，享受整个生态圈和工具链带来的诸多好处。
+
+```sh
+$ npm install @nicevue/ui --save
+$ yarn add @nicevue/ui
+```
+
+## 示例
+
+全局引入
+
+```ts
+/** ./src/mian.ts */
+import NiceVue from '@nicevue/ui'
+import '@nicevue/ui/dist/style/index.css' // 引入全局样式
+createApp(App).use(NiceVue).mount('#app')
+
+/** ./src/App.tsx */
+import { defineComponent, ref } from 'vue'
+export default defineComponent({
+  setup() {
+    return () => <nice-button type="primary">add</nice-button>
+  }
+})
+```
+
+按需引入
+
+```ts
+/** ./src/mian.ts */
+import '@nicevue/ui/dist/style/base.css' // 按需引入-引入基础样式
+createApp(App).use(NiceVue).mount('#app')
+
+/** ./src/App.tsx */
+import { defineComponent, ref } from 'vue'
+import { Button } from '@nicevue/ui' // 按需引入-引入按钮组件
+import '@nicevue/ui/dist/style/theme/button.css' // 按需引入-引入按钮样式
+
+export default defineComponent({
+  components: { NiceButton: Button },
+  setup() {
+    return () => {
+      return (
+        <div class="wrap">
+          <nice-button type="primary"></nice-button>
+          <Button type="success">add</Button>
+        </div>
+      )
+    }
+  }
+})
+```

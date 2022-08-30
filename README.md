@@ -11,6 +11,7 @@
 - [开发 ui 组件库文档](/note/03-组件库文档.md)
 - [开发 cli 工具](/note/04-cli工具.md)
 - [部署 ui 组件库文档](/note/05-组件库文档部署.md)
+- [包发布到 npm](/note/06-发布包到npm.md)
 
 ## 项目子仓库架构
 
@@ -50,7 +51,3 @@ cli 工具
 - 扩展 cli 工具，一键创建一个组件库模板
 
 - ...
-
-## vercel(无法访问)
-
-https://vercel.com/dashboard
