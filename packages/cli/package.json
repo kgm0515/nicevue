@@ -1,7 +1,11 @@
 {
   "name": "@nicevue/cli",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "files": [
+    "lib",
+    "package.json"
+  ],
   "description": "www",
   "repository": {
     "type": "git",
@@ -10,10 +14,6 @@
   "bin": {
     "nicevue": "./lib/index.js"
   },
-  "files": [
-    "lib",
-    "package.json"
-  ],
   "scripts": {
     "dev": "tsc --watch",
     "build": "rimraf ./lib/index.js && tsc",
