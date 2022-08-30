@@ -8,6 +8,16 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgm0515/nicevue.git"
+  },
+  "keywords": [
+    "@nicevue/site",
+    "vue组件库文档",
+    "@nicevue/ui组件库文档"
+  ],
+  "author": "kgm0515",
   "dependencies": {
     "@nicevue/ui": "workspace:^",
     "vue": "^3.2.37"

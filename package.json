@@ -12,7 +12,8 @@
     "dev:mdx": "cd ./packages/mdx && pnpm i  && pnpm dev",
     "dev:site": "cd ./packages/site && pnpm i  && pnpm dev",
     "dev:cli": "cd ./packages/cli && pnpm i  && pnpm dev",
-    "preview": "cd ./packages/site && pnpm preview"
+    "preview": "cd ./packages/site && pnpm preview",
+    "deploy:site": "node ./scripts/deploySite.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,8 @@
   "homepage": "https://github.com/kgm0515/nicevue#readme",
   "devDependencies": {
     "typescript": "^4.7.4",
-    "vite": "^3.0.9"
+    "vite": "^3.0.9",
+    "shelljs": "^0.8.5"
   },
   "dependencies": {
     "vue": "^3.2.37"

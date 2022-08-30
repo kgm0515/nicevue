@@ -22,6 +22,15 @@
     "build:ui": "vue-tsc --noEmit && vite build",
     "build:style": "gulp buildTask"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgm0515/nicevue.git"
+  },
+  "keywords": [
+    "@nicevue/ui",
+    "vue组件库"
+  ],
+  "author": "kgm0515",
   "devDependencies": {
     "@nicevue/mdx": "workspace:^",
     "@types/gulp": "^4.0.9",

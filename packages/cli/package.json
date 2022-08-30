@@ -2,7 +2,10 @@
   "name": "@nicevue/cli",
   "version": "1.0.0",
   "description": "www",
-  "repository": "ssas.www.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgm0515/nicevue.git"
+  },
   "bin": {
     "nicevue": "./lib/index.js"
   },
@@ -14,13 +17,19 @@
     "dev": "tsc --watch",
     "build": "rimraf ./lib/index.js && tsc"
   },
-  "author": "",
+  "keywords": [
+    "@nicevue/cli",
+    "@nicevue/cli辅助工具",
+    "nicevue命令行工具"
+  ],
+  "author": "kgm0515",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.0.1",
     "commander": "^9.2.0",
     "fs-extra": "^10.1.0",
-    "ora": "5.4.0"
+    "ora": "5.4.0",
+    "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13"

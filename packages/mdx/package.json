@@ -23,8 +23,16 @@
     "dev": "tsc --watch",
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgm0515/nicevue.git"
+  },
+  "keywords": [
+    "@nicevue/mdx",
+    "vite插件",
+    "解析md文件成(jsx)虚拟dom"
+  ],
+  "author": "kgm0515",
   "license": "ISC",
   "devDependencies": {
     "@mdx-js/mdx": "^2.1.3",
