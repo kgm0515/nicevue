@@ -1,8 +1,10 @@
 {
-  "name": "nicevue",
+  "name": "root",
+  "private": true,
   "version": "1.0.0",
-  "description": "vue组件库，vue、vite",
-  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "build": "npm run build:mdx && npm run build:ui && npm run build:site && npm run build:cli",
     "build:mdx": "cd ./packages/mdx && pnpm i  && pnpm build",
@@ -19,9 +21,6 @@
     "type": "git",
     "url": "git+https://github.com/kgm0515/nicevue.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/kgm0515/nicevue/issues"
   },
