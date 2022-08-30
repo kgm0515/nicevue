@@ -16,7 +16,8 @@
   ],
   "scripts": {
     "dev": "tsc --watch",
-    "build": "rimraf ./lib/index.js && tsc"
+    "build": "rimraf ./lib/index.js && tsc",
+    "publish": "npm publish"
   },
   "keywords": [
     "@nicevue/cli",
