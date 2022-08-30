@@ -21,7 +21,7 @@
     "build": "npm run build:ui && npm run build:style",
     "build:ui": "vue-tsc --noEmit && vite build",
     "build:style": "gulp buildTask",
-    "publish": "npm publish"
+    "pub": "npm publish"
   },
   "repository": {
     "type": "git",

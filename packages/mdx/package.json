@@ -23,7 +23,7 @@
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
-    "publish": "npm publish"
+    "pub": "npm publish"
   },
   "repository": {
     "type": "git",

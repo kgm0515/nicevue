@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "npm run build:mdx && npm run build:ui && npm run build:site && npm run build:cli",
-    "publish": "npm run publish:mdx && npm run publish:ui && npm run publish:cli",
+    "pub": "npm run pub:mdx && npm run pub:ui && npm run pub:cli",
     "build:mdx": "cd ./packages/mdx && pnpm i  && pnpm build",
     "build:ui": "cd ./packages/ui && pnpm i  && pnpm build",
     "build:site": "cd ./packages/site && pnpm i  && pnpm build",
@@ -13,9 +13,9 @@
     "dev:cli": "cd ./packages/cli && pnpm i  && pnpm dev",
     "preview": "cd ./packages/site && pnpm preview",
     "deploy:site": "node ./scripts/deploySite.js",
-    "publish:mdx": "cd ./packages/mdx && pnpm publish",
-    "publish:ui": "cd ./packages/ui && pnpm publish",
-    "publish:cli": "cd ./packages/cli && pnpm publish"
+    "pub:mdx": "cd ./packages/mdx && pnpm pub",
+    "pub:ui": "cd ./packages/ui && pnpm pub",
+    "pub:cli": "cd ./packages/cli && pnpm pub"
   },
   "repository": {
     "type": "git",
