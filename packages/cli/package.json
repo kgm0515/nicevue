@@ -1,5 +1,6 @@
 {
   "name": "@nicevue/cli",
+  "private": false,
   "version": "1.0.0",
   "description": "www",
   "repository": {
