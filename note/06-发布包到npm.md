@@ -53,3 +53,7 @@ npm login #输入用户名和密码和 Email, kgm0515、kgm1...、498413945@qq.c
 ```
 
 运行`npm run pub`发布所有子仓库，发布器必须先提交所有代码
+
+### 命令行查看包的发布状态
+
+`npm show @nicevue/ui`
