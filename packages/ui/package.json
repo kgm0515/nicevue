@@ -1,7 +1,9 @@
 {
   "name": "@nicevue/ui",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "description": "@nicevue/ui组件库",
+  "homepage": "https://github.com/kgm0515/nicevue/tree/main/packages/ui",
   "files": [
     "dist",
     "types",
@@ -17,6 +19,9 @@
     "./dist/*": "./dist/*"
   },
   "types": "types/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "npm run build:ui && npm run build:style",
     "build:ui": "vue-tsc --noEmit && vite build",
@@ -31,7 +36,7 @@
     "@nicevue/ui",
     "vue组件库"
   ],
-  "author": "kgm0515",
+  "author": "kgm0515 <498413945@qq.com>",
   "devDependencies": {
     "@nicevue/mdx": "workspace:^",
     "@types/gulp": "^4.0.9",

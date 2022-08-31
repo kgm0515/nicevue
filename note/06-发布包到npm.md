@@ -24,6 +24,9 @@ npm login #输入用户名和密码和 Email, kgm0515、kgm1...、498413945@qq.c
     "./dist/*": "./dist/*"
   },
   "types": "types/index.d.ts",
+   "description": "@nicevue/ui组件库的辅助命令行工具",
+  "homepage": "https://github.com/kgm0515/nicevue/tree/main/packages/cli",
+  "publishConfig": { "access": "public" }, // 发布的模块默认为私有模块
   "scripts": {
   +  "pub": "npm publish"
   },

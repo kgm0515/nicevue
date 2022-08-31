@@ -1,8 +1,9 @@
 {
   "name": "@nicevue/mdx",
   "private": false,
-  "version": "1.0.3",
-  "description": "",
+  "version": "1.0.4",
+  "description": "vite插件，用于把markdown语法转化为虚拟dom",
+  "homepage": "https://github.com/kgm0515/nicevue/tree/main/packages/mdx",
   "type": "module",
   "files": [
     "dist",
@@ -20,6 +21,9 @@
       "require": "./dist/index.js"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
@@ -34,7 +38,7 @@
     "vite插件",
     "解析md文件成(jsx)虚拟dom"
   ],
-  "author": "kgm0515",
+  "author": "kgm0515 <498413945@qq.com>",
   "license": "ISC",
   "devDependencies": {
     "@mdx-js/mdx": "^2.1.3",

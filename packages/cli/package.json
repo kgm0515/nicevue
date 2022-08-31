@@ -1,18 +1,22 @@
 {
   "name": "@nicevue/cli",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "description": "@nicevue/ui组件库的辅助命令行工具",
+  "homepage": "https://github.com/kgm0515/nicevue/tree/main/packages/cli",
   "files": [
     "lib",
     "package.json"
   ],
-  "description": "www",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kgm0515/nicevue.git"
   },
   "bin": {
     "nicevue": "./lib/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "dev": "tsc --watch",
@@ -24,7 +28,7 @@
     "@nicevue/cli辅助工具",
     "nicevue命令行工具"
   ],
-  "author": "kgm0515",
+  "author": "kgm0515 <498413945@qq.com>",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.0.1",
