@@ -1,7 +1,7 @@
 {
   "name": "@nicevue/ui",
   "private": false,
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "@nicevue/ui组件库",
   "homepage": "https://github.com/kgm0515/nicevue/tree/main/packages/ui",
   "files": [
