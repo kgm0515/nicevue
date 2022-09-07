@@ -6,7 +6,7 @@ https://gitee.com/kgm0515/vue3-comps/tree/master/packages/ui
 
 - 包安装速度极快
 - 磁盘空间利用率高
-- monorepo：天然内置支持当仓库多包
+- monorepo：方便版本管理，天然内置支持当仓库多包, 相互引用方便。
 
 安装 pnpm
 
