@@ -20,6 +20,8 @@
   "author": "kgm0515",
   "dependencies": {
     "@nicevue/ui": "workspace:^",
+    "@nicevue/utils": "workspace:^1.0.0",
+    "less": "^4.1.3",
     "vue": "^3.2.37"
   },
   "devDependencies": {

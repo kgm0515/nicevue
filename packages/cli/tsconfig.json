@@ -8,6 +8,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "jsx": "preserve",
+    "removeComments": true,
     "lib": ["esnext", "dom"]
   },
   "include": ["src/**/*"]
