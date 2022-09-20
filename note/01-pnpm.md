@@ -134,6 +134,6 @@ fs.symlink(path.resolve(__dirname + '/target/'), path.resolve(__dirname + '/test
 - 判断当前正在安装的依赖是否带有"workspace:^", 如果是(要安装的是内部子仓库)，那么就在 node_modules 下面创建`@nicevue`目录，同时在该目录下创建指向当前子仓库的软链接
 - 如果要安装的不是内部子仓库，会去当前计算机的一个缓存地址去查找是否已经依赖，
   1. 如果不存在就在缓存目录中安装该依赖
-- 在 node_modules 下面创建指向当缓存目录张目标依赖的软链接
+- 在 node_modules 下面创建指向当缓存目录目标依赖的软链接文件夹
 
 这也是 pnpm 为什么安装依赖这么快并且磁盘空间利用率高的原因之一
