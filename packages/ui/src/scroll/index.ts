@@ -7,7 +7,7 @@
  * @LastEditTime: 2022-08-26 14:55:07
  */
 import type { App, Plugin } from 'vue'
-import Scroll from './scroll'
+import Scroll from './scroll.vue'
 
 Scroll.install = (app: App) => {
   app.component(Scroll.name, Scroll)

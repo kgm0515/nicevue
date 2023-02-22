@@ -17,24 +17,20 @@ Each Markdown file is first compiled into HTML and then passed on as a Vue compo
 
 <div v-for="i in 3">{{ i }}</div>
 
-## Access to Site & Page Data
-
-<script setup>
-import { useData } from 'vitepress'
-// import Button from '../../ui/src/button/button.tsx'
-import Button from '/demo/button-base.vue'
-
-const { page } = useData()
-</script>
-
-<pre>{{ page }}</pre>
-
 ## Input
 
 ::: v-pre
 `{{ This will be displayed as-is }}`
 :::
 
-## Using Components
+## Access to Site & Page Data & Using Components
 
-<Button text="aaaaaa"/>
+<script setup>
+import { useData } from 'vitepress'
+import Scroll from '../../../ui/src/scroll/scroll.vue'
+const { page } = useData()
+</script>
+
+<Scroll text="aaaaaa"/>
+
+<pre>{{ page }}</pre>

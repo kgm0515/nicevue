@@ -1,11 +1,3 @@
-/*
- * @Description:
- * @Version: 2.0
- * @Autor: 匡光淼
- * @Date: 2022-08-26 14:34:50
- * @LastEditors: 匡光淼
- * @LastEditTime: 2022-08-26 17:05:40
- */
 import { defineComponent, PropType } from 'vue'
 
 export const props = {

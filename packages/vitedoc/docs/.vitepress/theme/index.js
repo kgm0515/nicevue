@@ -1,5 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
 // import NiceVue from '../../../../ui/src/index'
+import '../../../../ui/style/index.less'
 
 export default {
   ...DefaultTheme,
