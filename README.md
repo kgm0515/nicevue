@@ -12,6 +12,7 @@
 - [开发 cli 工具](/note/04-cli工具.md)
 - [部署 ui 组件库文档](/note/05-组件库文档部署.md)
 - [包发布到 npm](/note/06-发布包到npm.md)
+- [使用 vitepress 开发组件库文档] https://vitepress.vuejs.org/guide/getting-started
 
 ## 项目子仓库架构
 
