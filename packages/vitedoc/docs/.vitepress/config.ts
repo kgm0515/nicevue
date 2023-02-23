@@ -88,7 +88,7 @@ export default defineConfig({
   themeConfig: {
     logo: '/img/baidu.png',
     siteTitle: '组件库标题',
-    outline: 3,
+    outline: [1, 3],
     outlineTitle: 'On this page',
     socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
     lastUpdatedText: 'Updated Date',
